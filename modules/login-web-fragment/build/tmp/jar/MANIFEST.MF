@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: login.web.fragment
+Bundle-SymbolicName: login.web.fragment
+Bundle-Version: 1.0.0
+Created-By: 1.8.0_111 (Oracle Corporation)
+Fragment-Host: com.liferay.login.web;bundle-version="1.1.4"
+Import-Package: com.liferay.invitation.invite.members.model;version="[
+ 1.0,2)",com.liferay.invitation.invite.members.service;version="[1.0,2
+ )",com.liferay.portal.kernel.dao.orm,com.liferay.portal.kernel.except
+ ion,com.liferay.portal.kernel.model,com.liferay.portal.kernel.search,
+ com.liferay.portal.kernel.service,com.liferay.portal.kernel.transacti
+ on,com.liferay.portal.kernel.util,javax.servlet,javax.servlet.http
+Javac-Debug: on
+Javac-Deprecation: off
+Javac-Encoding: UTF-8
+Tool: Bnd-3.2.0.201605172007
