@@ -23,8 +23,10 @@
 	MemberRequestLocalService memberRequestLocalService = (MemberRequestLocalService)
 		renderRequest.getAttribute("MemberRequestLocalService");
 
-	boolean serviceNull = (memberRequestLocalService == null);
+	// fetch the count for display later
+	int memberRequestCount = memberRequestLocalService.getMemberRequestsCount();
 
+	// we won't actually worry about the display, as long as we don't get an NPE we're good.
 %>
 
 <c:choose>
@@ -70,8 +72,6 @@
 			<aui:input name="saveLastPath" type="hidden" value="<%= false %>" />
 			<aui:input name="redirect" type="hidden" value="<%= redirect %>" />
 			<aui:input name="doActionAfterLogin" type="hidden" value="<%= portletName.equals(PortletKeys.FAST_LOGIN) ? true : false %>" />
-
-			<p>Member service null: <%= serviceNull %></p>
 
 			<div class="inline-alert-container lfr-alert-container"></div>
 
